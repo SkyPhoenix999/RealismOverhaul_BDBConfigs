@@ -11,6 +11,8 @@ license: CC-BY-SA
 release_status: stable
 depends:
   - name: ModuleManager
+  - name: TweakScaleRescaled-Redist
+    suppress_recommendations: true
   - name: AdvancedJetEngine
     suppress_recommendations: true
   - name: FAR
@@ -18,6 +20,8 @@ depends:
   - name: KerbalJointReinforcementContinued
     suppress_recommendations: true
   - name: RealChute
+    suppress_recommendations: true
+  - name: RealChuteForStock
     suppress_recommendations: true
   - name: RealFuels
     suppress_recommendations: true
@@ -42,18 +46,16 @@ recommends:
   - name: MechJeb2
   - name: ProceduralFairings
   - name: ProceduralParts
-  - any_of:
-      - name: RCSBuildAid
-      - name: RCSBuildAidCont
+  - name: RCSBuildAid
   - name: RealSolarSystem
+  - name: TexturesUnlimited
+  - name: RSSVE-Textures
   - any_of:
       - name: RemoteTech
       - name: RealAntennas
   - any_of:
       - name: Kerbalism-Config-RO
       - name: TACLS
-  - name: TexturesUnlimited
-  - name: RSSVE-Textures
 suggests:
   - name: RealismOverhaulCraftFiles
   - name: ALCOR
@@ -101,6 +103,7 @@ suggests:
       - name: Restock
   - name: UniversalStorage
   - name: VenStockRevamp-NewParts
+  - name: KerbalWind
 provides:
   - RealPlumeConfigs
   - RealFuels-Engine-Configs
@@ -111,6 +114,9 @@ conflicts:
   - name: TestFlightConfig
   - name: StockWaterfallEffects
   - name: WaterfallRestock
+  - name: DeadlyReentry
+  - name: EngineLightRelit
+  - name: RocketSoundEnhancement
 resources:
   homepage: >-
     http://forum.kerbalspaceprogram.com/index.php?/topic/155700-122-realism-overhaul-v1150-05262017/
